@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ---------- Header ---------- */
+.cabecera {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: aquamarine;
+  height: 10vh;
+}
+.logo_geek {
+  width: 40vw;
+  margin: 10px 5px;
+}
+.div_search {
+  position: absolute;
+  right: 5px;
+}
+#input_buscador {
+  display: none;
+  float: left;
+  width: 45vw;
+  height: 8vw;
+  margin: 0px 10px 0px 5px;
+  background-color: azure;
+}
+.button {
+  background: lightblue;
+  padding: 1vh 5vw;
+  margin: 15px 0px 15px 40px;
+  border-radius: 10px;
+}
+.icon_search img {
+  height: 8vh;
+}
+.icon_search:hover #input_buscador {
+  display: flex;
+}
+/* ------------------------------- */

@@ -1,46 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap');
 * {
   box-sizing: border-box;
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: 'Cabin', sans-serif;
 }
-section {
-  background: radial-gradient(#638ee5, #253659 );
+body {
+  background:  linear-gradient(45deg, #253659,#638ee5 );
   background-repeat: no-repeat;
 }
 .button {
   background: #f27457;
-  padding: 1.5% 3vw;
-  margin: 1vw auto;
-  border-radius: 6px;
-  box-shadow: 1px 1px 1px 0px black ;
+  padding: 0px 10px;
+  margin: 1vw 0px;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 2px 0px black ;
   text-decoration: none;
+  font-family: 'Nerko One', cursive;
+  font-size: calc(1em + 1vw);
 }
 .button:hover {
   color: white;
   background: #253659;
+  transition: all 500ms;
 }
 .input {
   background: azure;
   width: 90%;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 1vh 5%;
+  border-radius: 10px;
+  padding: 1vh;
+  margin: 5px 15px;
 }
 .input::placeholder {
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: center;
   color: black;
 }
-/* -----------Colores------------ */
-/*
-#253659
-#03A696
-#04BF9D
-#F27457
-#BF665E
-*/
-/* ------------------------------ */
+
 
 /* ---------- Header ---------- */
 
@@ -50,30 +45,22 @@ section {
   justify-content: space-evenly;
   width: 100%;
   background: #04bf9d;
-  height: 11vw;
+  height: 10vh;
   box-shadow: inset 0px -1px 3px black;
 }
 
 .logo_geek {
-  width: 30vw;
-  margin: 10px 5px;
-}
-.logo_superior {
-  display: flex;
-}
-.searcher {
-  display: flex;
-  align-items: center;
-  margin: 0px 10px 0px 0px;
+  height: 9vh;
+  margin: 5px 15px;
 }
 
 .input_buscador {
-  width: 50vw;
+  width: 30vw;
   background: #b1b1b1;
   border-style: none;
-  height: 7vw;
+  height: auto;
   border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .icon_search {
   display: none;
@@ -85,19 +72,18 @@ section {
   border-radius: 20px;
 }
 
-
 /* ------Form inicio sesion---------- */
 .contenedor {
-  padding: 2vh 0 5vh;
+  padding: 1vh 0 3vh;
 }
 
 .formulario {
   background: linear-gradient(180deg,#027368, #04BF9D );
   color: white;
   height: auto;
-  width: 60vw;
+  width: 25vw;
   text-align: center;
-  margin: 5vh auto;
+  margin: 10vh auto;
   padding: 5px 10px;
   border: 2px solid black;
   box-shadow: 2px 2px 4px 1px black;
@@ -106,40 +92,40 @@ section {
 .label {
   text-align: left;
   display: block;
-  margin: 15px auto 0px;
+  margin: 10px auto 0px;
 }
 
 .formulario h2 {
-  font-size: calc(1.5em + 3.5vw);
+  font-size: calc(1.2em + 1vw);
   font-family: 'Nerko One', cursive;
   text-align: center;
   text-shadow: 3px 3px 5px black;
 }
 .entrar {
-  margin: 15px;
+  margin: 5px;
 }
 
-/* ----------    Footer   ---------- */
+/* ----------    Informacion y contacto   ---------- */
 
 .informacion {
-  width: 100vw;
-  height: auto;
-  background: linear-gradient(180deg,#04BF9D, #027368 );
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
 }
 .div_informacion {
-  width: 48vw;
-  float: left;
-  padding: 0px 0px 20px;
+  width: 40vw;
 }
 img.logo_inferior {
-  width: 90%;
+  width: 80%;
   height: auto;
-  margin-bottom: 20px 5%;
+  margin-bottom: 20px;
 }
 .informacion p {
-  padding: 8px;
-  font-size: 1.2em;
+  float: left;
+  width: 50%;
+  padding: 6px 0px;
+  font-size: calc(0.2em + 1vw);
   font-weight: bold;
   text-shadow: 1px 1px #253659;
   letter-spacing: 1px;
@@ -150,24 +136,27 @@ a {
 
 form.contacto {
   display: inline-block;
-  width: 48vw;
-  margin: 0;
-  padding: 10px 10px 1vh;
-  background: #25365973;
-  clear: left;
+  width: 35vw;
+  margin: 10vh 0px;
+  padding: 10px 10px;
 }
+
+/* ----------    Footer   ---------- */
 footer {
+    display: flex;
   background: #253659;
   color: white;
-  text-align: center;
-  box-shadow: inset 0px -1px 10px black;
+  border-top: 2px solid black;
+  box-shadow: inset 1px 1px 3px 0px black;
   clear: both;
 }
+footer > p {
+    text-align: right;
+    width: 40vw;
+}
 .text_footer {
-  padding: 10px 0px 15px;
+  padding: 15px 55px;
 }
 .footer {
-  display: flex;
-  align-self: center;
-  justify-content: space-around;
+  display: inline-flex;
 }

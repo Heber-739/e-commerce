@@ -9,16 +9,19 @@ section {
 }
 .button {
   background: #f27457;
-  padding: 1vh 5vw;
-  margin: 1vw auto;
+  padding: 0.15vh 5vw;
+  margin: 1vw 0px;
   border-radius: 6px;
   font-size: 1em;
   box-shadow: 1px 1px 1px 0px black ;
   text-decoration: none;
+  font-family: 'Nerko One', cursive;
+  font-size: 1.3em;
 }
 .button:hover {
   color: white;
   background: #253659;
+  transition: all 500ms;
 }
 .input {
   background: azure;
@@ -125,8 +128,8 @@ section {
 .entrar {
   margin: 15px;
 }
+/* ----------    Informacion y contacto   ---------- */
 
-/* ----------    Footer   ---------- */
 
 .informacion {
   background: linear-gradient(180deg,#04BF9D, #027368 );
@@ -157,6 +160,9 @@ form.contacto {
   padding: 10px 20px 1vh;
   background: #25365973;
 }
+
+
+/* --------------    Footer   -------------- */
 footer {
   background: #253659;
   color: white;

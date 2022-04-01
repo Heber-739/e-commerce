@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+section {
+  background: radial-gradient(#638ee5, #253659 );
+  background-repeat: no-repeat;
+}
+.button {
+  background: #f27457;
+  padding: 1vh 5vw;
+  margin: 1vw auto;
+  border-radius: 6px;
+  font-size: 1em;
+  box-shadow: 1px 1px 1px 0px black ;
+  text-decoration: none;
+}
+.button:hover {
+  color: white;
+  background: #253659;
+}
+.input {
+  background: azure;
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 1vh 5%;
+
+}
+.input::placeholder {
+  color: black;
+}
+/* -----------Colores------------ */
+/*
+#253659
+#03A696
+#04BF9D
+#F27457
+#BF665E
+*/
+/* ------------------------------ */
+
+/* ---------- Header ---------- */
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: #04bf9d;
+  height: 10vh;
+  box-shadow: inset 0px -1px 3px black;
+}
+
+.logo_geek {
+  height: 8vh;
+  margin: 0px 5px;
+}
+.logo_superior {
+  display: flex;
+}
+.searcher {
+  position: absolute;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.input_buscador {
+  display: block;
+  width: 0vw;
+  opacity: 0;
+  height: 5vh;
+  margin: 0px 10px 0px 0px;
+/*   transform: translateX(0px);
+ */}
+
+.login {
+  display: block;
+  margin: 0px 5.5vh 0px 0px;
+}
+.icon_search {
+  /* position: absolute; */
+  right: 5px;
+  height: 5vh;
+}
+.icon_search:hover {
+  box-shadow: 1px 1px 3px black;
+  border-radius: 5px;
+}
+
+/* ------Form inicio sesion---------- */
+.contenedor {
+  padding: 2vh 0 5vh;
+}
+
+.formulario {
+  background: linear-gradient(180deg,#027368, #04BF9D );
+  color: white;
+  height: auto;
+  width: 60vw;
+  text-align: center;
+  margin: 5vh auto;
+  padding: 5px 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px 1px black;
+  border-radius: 5px;
+}
+.label {
+  text-align: left;
+  display: block;
+  margin: 15px auto 0px;
+}
+
+
+.formulario h2 {
+  font-size: calc(1em + 3.5vw);
+  font-family: 'Nerko One', cursive;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+}
+.entrar {
+  margin: 15px;
+}
+
+/* ----------    Footer   ---------- */
+
+.informacion {
+  background: linear-gradient(180deg,#04BF9D, #027368 );
+  text-align: center;
+}
+.div_informacion {
+  padding: 0px 0px 40px;
+}
+img.logo_inferior {
+  width: 90vw;
+  height: auto;
+  margin-bottom: 20px;
+}
+.informacion p {
+  padding: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px #253659;
+  letter-spacing: 1px;
+}
+a {
+  color: white;
+}
+
+form.contacto {
+  width: 90vw;
+  margin: 1vh auto;
+  padding: 10px 20px 1vh;
+  background: #25365973;
+}
+footer {
+  background: #253659;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0px -1px 10px black;
+}
+.text_footer {
+  padding: 10px 0px 15px;
+}
+.footer {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}

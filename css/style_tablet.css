@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap');
 * {
   box-sizing: border-box;
+  font-size: 1.3em;
   font-family: 'Cabin', sans-serif;
 }
 section {
@@ -9,11 +10,15 @@ section {
 }
 .button {
   background: #f27457;
-  padding: 1vh 5vw;
+  padding: 1.5% 3vw;
   margin: 1vw auto;
   border-radius: 6px;
-  font-size: 1.2em;
-  font-weight: bold;
+  box-shadow: 1px 1px 1px 0px black ;
+  text-decoration: none;
+}
+.button:hover {
+  color: white;
+  background: #253659;
 }
 .input {
   background: azure;
@@ -21,9 +26,10 @@ section {
   border-radius: 5px;
   padding: 10px;
   margin: 1vh 5%;
-
 }
 .input::placeholder {
+  font-size: 0.8em;
+  text-align: center;
   color: black;
 }
 /* -----------Colores------------ */
@@ -41,44 +47,44 @@ section {
 .cabecera {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   background: #04bf9d;
-  height: 10vh;
+  height: 11vw;
   box-shadow: inset 0px -1px 3px black;
 }
 
 .logo_geek {
-  height: 8vh;
-  margin: 0px 15px;
+  width: 30vw;
+  margin: 10px 5px;
 }
-
+.logo_superior {
+  display: flex;
+}
 .searcher {
   display: flex;
   align-items: center;
+  margin: 0px 10px 0px 0px;
 }
 
 .input_buscador {
-  display: none;
-  float: left;
-  width: 45vw;
-  height: 5vh;
-  margin: 0px 5px;
-}
-
-.login {
-  display: block;
-  margin: 0px 5.5vh 0px 0px;
+  width: 50vw;
+  background: #b1b1b1;
+  border-style: none;
+  height: 7vw;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 .icon_search {
-  position: absolute;
-  right: 5px;
-  height: 5vh;
+  display: none;
 }
-.icon_search:hover {
-  box-shadow: 1px 1px 3px black;
-  border-radius: 5px;
+.input_buscador:focus{
+  background: #253659a8;
+  color: white;
+  transition: background 1s;
+  border-radius: 20px;
 }
+
 
 /* ------Form inicio sesion---------- */
 .contenedor {
@@ -103,9 +109,8 @@ section {
   margin: 15px auto 0px;
 }
 
-
 .formulario h2 {
-  font-size: calc(1em + 3.5vw);
+  font-size: calc(1.5em + 3.5vw);
   font-family: 'Nerko One', cursive;
   text-align: center;
   text-shadow: 3px 3px 5px black;
@@ -117,16 +122,20 @@ section {
 /* ----------    Footer   ---------- */
 
 .informacion {
+  width: 100vw;
+  height: auto;
   background: linear-gradient(180deg,#04BF9D, #027368 );
   text-align: center;
 }
 .div_informacion {
-  padding: 0px 0px 40px;
+  width: 48vw;
+  float: left;
+  padding: 0px 0px 20px;
 }
 img.logo_inferior {
-  width: 90vw;
+  width: 90%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px 5%;
 }
 .informacion p {
   padding: 8px;
@@ -140,16 +149,19 @@ a {
 }
 
 form.contacto {
-  width: 90vw;
-  margin: 1vh auto;
-  padding: 10px 20px 1vh;
+  display: inline-block;
+  width: 48vw;
+  margin: 0;
+  padding: 10px 10px 1vh;
   background: #25365973;
+  clear: left;
 }
 footer {
   background: #253659;
   color: white;
   text-align: center;
   box-shadow: inset 0px -1px 10px black;
+  clear: both;
 }
 .text_footer {
   padding: 10px 0px 15px;

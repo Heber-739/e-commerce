@@ -29,6 +29,7 @@ section {
 
 }
 .input::placeholder {
+  text-align: center;
   color: black;
 }
 /* -----------Colores------------ */

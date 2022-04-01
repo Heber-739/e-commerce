@@ -26,8 +26,5 @@ function searchElement(){
                 document.querySelector('.icon_search').src = "./img/search.png";
                 break;
         }
-        
       }
-    
-
 }

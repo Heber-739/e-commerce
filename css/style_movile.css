@@ -35,15 +35,6 @@ section {
   text-align: center;
   color: black;
 }
-/* -----------Colores------------ */
-/*
-#253659
-#03A696
-#04BF9D
-#F27457
-#BF665E
-*/
-/* ------------------------------ */
 
 /* ---------- Header ---------- */
 
@@ -56,7 +47,9 @@ section {
   height: 10vh;
   box-shadow: inset 0px -1px 3px black;
 }
-
+.cabecera a {
+  text-decoration: none;
+}
 .logo_geek {
   height: 8vh;
   margin: 0px 5px;
@@ -78,21 +71,54 @@ section {
   opacity: 0;
   height: 5vh;
   margin: 0px 10px 0px 0px;
-/*   transform: translateX(0px);
- */}
+}
 
 .login {
   display: block;
   margin: 0px 5.5vh 0px 0px;
 }
 .icon_search {
-  /* position: absolute; */
   right: 5px;
   height: 5vh;
 }
 .icon_search:hover {
   box-shadow: 1px 1px 3px black;
   border-radius: 5px;
+}
+/* ------Conteiner Productos---------- */
+.header a{
+  margin: 5px 20px;
+}
+.header h1 {
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-size: calc(1em + 4.5vw);
+  margin: 10px 0px;
+  text-shadow: 1px 1px #f27457;
+  text-decoration: underline 2px black;
+}
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.producto {
+  width: 40vw;
+  margin: 10px auto;
+}
+.producto:hover {
+  transform: scale(1.05);
+  transition: all 500ms;
+}
+.producto img {
+  width: 100%;
+}
+.conteiner p {
+  font-size: calc(0.2em + 2.8vw);
+  padding: 4px 2px;
+  line-height: 1.5em;
+}
+.precio_producto {
+  font-weight: bold;
 }
 
 /* ------Form inicio sesion---------- */

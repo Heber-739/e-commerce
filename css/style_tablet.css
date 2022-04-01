@@ -35,15 +35,6 @@ section {
   text-align: center;
   color: black;
 }
-/* -----------Colores------------ */
-/*
-#253659
-#03A696
-#04BF9D
-#F27457
-#BF665E
-*/
-/* ------------------------------ */
 
 /* ---------- Header ---------- */
 
@@ -77,11 +68,46 @@ section {
 .icon_search {
   display: none;
 }
-.input_buscador:focus{
+.input_buscador:hover{
   background: #253659a8;
   color: white;
   transition: background 1s;
   border-radius: 20px;
+}
+/* ------Conteiner Productos---------- */
+.header a{
+  margin: 5px 20px;
+}
+.header h1 {
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-size: calc(1em + 4.5vw);
+  margin: 10px 0px;
+  text-shadow: 1px 1px #f27457;
+  text-decoration: underline 2px black;
+}
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.producto {
+  width: 22vw;
+  margin: 10px auto;
+}
+.producto img {
+  width: 100%;
+}
+.producto:hover {
+  transform: scale(1.05);
+  transition: all 500ms;
+}
+.conteiner p {
+  font-size: calc(0.5em + 1vw);
+  padding: 3px 2px;
+  line-height: 1.5em;
+}
+.precio_producto {
+  font-weight: bold;
 }
 
 

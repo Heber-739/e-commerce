@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek Store</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1023px)"
+      href="./css/style_desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px) and (max-width: 1022px)"
+      href="./css/style_tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(max-width: 767px)"
+      href="./css/style_movile.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="cabecera">
+        <a href="./index.html"
+          ><img
+            class="logo_geek logo_superior"
+            src="./img/logo.png"
+            alt="Logo del e-commerce"
+        /></a>
+        <div class="searcher">
+          <input
+            type="text"
+            id="input_buscador"
+            placeholder="Buscar en esta página &#x1f50d;"
+            class="input_buscador input"
+            autocomplete="off"
+          />
+          <img
+            class="icon_search"
+            src="./img/search.png"
+            alt="Logo Buscador"
+            onclick="searchElement()"
+          />
+        </div>
+        <a href="./iniciar_sesion.html"><button class="button login">Login</button></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="header">
+        <h1>TODOS LOS PRODUCTOS</h1>
+        <a href="#"><button class="button">Agregar producto</button></a>
+      </div>
+      <div class="conteiner">
+        <figure class="producto" onclick="description(1)">
+          <img class="imagen_producto" src="./img/Ben_Solo.png" alt="Muñeco Ben Solo">
+          <figcaption >
+            <p class="descripcion_producto">Coleccionable Ben Solo</p>
+            <p class="precio_producto">$49</p>
+            <p class="numero_producto">#1</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(2)">
+          <img class="imagen_producto" src="./img/Control_xbox.png" alt="Control Xbox Blanco">
+          <figcaption >
+            <p class="descripcion_producto">Control Xbox Blanco</p>
+            <p class="precio_producto">$59</p>
+            <p class="numero_producto">#2</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(3)">
+          <img class="imagen_producto" src="./img/GameBoy_Transparente.png" alt="Control Game Boy">
+          <figcaption >
+            <p class="descripcion_producto">Game Boy Transparente</p>
+            <p class="precio_producto">$149</p>
+            <p class="numero_producto">#3</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(4)">
+          <img class="imagen_producto" src="./img/Joystick_inalambrico_Switch.png" alt="Joystick Switch">
+          <figcaption >
+            <p class="descripcion_producto">Switch Joystick</p>
+            <p class="precio_producto">$69</p>
+            <p class="numero_producto">#4</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(5)">
+          <img class="imagen_producto" src="./img/Lego_DarthBlazer_PilotoCaza.png" alt="Lego Darth Blazer + Piloto de caza">
+          <figcaption >
+            <p class="descripcion_producto">Lego Darth Blazer + Piloto de Caza</p>
+            <p class="precio_producto">$1669</p>
+            <p class="numero_producto">#5</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(6)">
+          <img class="imagen_producto" src="./img/Muñeco_Grogu.png" alt="Coleccionable Grogu">
+          <figcaption >
+            <p class="descripcion_producto">Coleccionable Grogu</p>
+            <p class="precio_producto">$45</p>
+            <p class="numero_producto">#6</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(7)">
+          <img class="imagen_producto" src="./img/Muñeco_Sonic.png" alt="Coleccionable Sonic">
+          <figcaption >
+            <p class="descripcion_producto">Coleccionable Sonic</p>
+            <p class="precio_producto">$39</p>
+            <p class="numero_producto">#7</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(8)">
+          <img class="imagen_producto" src="./img/Muñeco_Yoda.png" alt="Coleccionable Yoda">
+          <figcaption >
+            <p class="descripcion_producto">Coleccionable Yoda</p>
+            <p class="precio_producto">$58</p>
+            <p class="numero_producto">#8</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(9)">
+          <img class="imagen_producto" src="./img/Nintendo_NES.png" alt="Nintendo NES">
+          <figcaption >
+            <p class="descripcion_producto">Nintendo NES</p>
+            <p class="precio_producto">$199</p>
+            <p class="numero_producto">#9</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(10)">
+          <img class="imagen_producto" src="./img/Peluche_Pikachu.png" alt="Disfraz Gigante Pikachu">
+          <figcaption >
+            <p class="descripcion_producto">Disfraz Gigante Pikachu</p>
+            <p class="precio_producto">$249</p>
+            <p class="numero_producto">#10</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(11)">
+          <img class="imagen_producto" src="./img/Play5.png" alt="PlayStation 5">
+          <figcaption >
+            <p class="descripcion_producto">PlayStation 5</p>
+            <p class="precio_producto">$999</p>
+            <p class="numero_producto">#11</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(12)">
+          <img class="imagen_producto" src="./img/PlayStation_VR.png" alt="PlayStation VR">
+          <figcaption >
+            <p class="descripcion_producto">PlayStation VR</p>
+            <p class="precio_producto">$399</p>
+            <p class="numero_producto">#12</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(13)">
+          <img class="imagen_producto" src="./img/Radio_Retro.png" alt="Radio Retro Fucsia">
+          <figcaption >
+            <p class="descripcion_producto">Radio Retro Fucsia</p>
+            <p class="precio_producto">$59</p>
+            <p class="numero_producto">#13</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(14)">
+          <img class="imagen_producto" src="./img/Star_trooper.png" alt="Coleccionable Star Troper">
+          <figcaption >
+            <p class="descripcion_producto">Coleccionable Star Troper</p>
+            <p class="precio_producto">$89</p>
+            <p class="numero_producto">#14</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(15)">
+          <img class="imagen_producto" src="./img/Taza_trooper.png" alt="Taza Star Troper">
+          <figcaption >
+            <p class="descripcion_producto">Taza Star Troper</p>
+            <p class="precio_producto">$25</p>
+            <p class="numero_producto">#15</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(16)">
+          <img class="imagen_producto" src="./img/Xbox_serieX.png" alt="Xbox Serie X">
+          <figcaption >
+            <p class="descripcion_producto">Xbox Serie X</p>
+            <p class="precio_producto">$599</p>
+            <p class="numero_producto">#16</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(17)">
+          <img class="imagen_producto" src="./img/teclado.jpg" alt="Teclado bluetooth">
+          <figcaption >
+            <p class="descripcion_producto">Teclado bluetooth</p>
+            <p class="precio_producto">$19</p>
+            <p class="numero_producto">#17</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(18)">
+          <img class="imagen_producto" src="./img/auriculares_sony.jpg" alt="Auriculares Sony">
+          <figcaption >
+            <p class="descripcion_producto">Auriculares Sony</p>
+            <p class="precio_producto">$39</p>
+            <p class="numero_producto">#18</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(19)">
+          <img class="imagen_producto" src="./img/PlayStation4_control.jpg" alt="Control PlayStation 4">
+          <figcaption >
+            <p class="descripcion_producto">Control PlayStation 4</p>
+            <p class="precio_producto">$59</p>
+            <p class="numero_producto">#19</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(20)">
+          <img class="imagen_producto" src="./img/Switch_joystick_inalambrico.png" alt="Switch Joystic">
+          <figcaption >
+            <p class="descripcion_producto">Switch Joystick</p>
+            <p class="precio_producto">$29</p>
+            <p class="numero_producto">#20</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(21)">
+          <img class="imagen_producto" src="./img/ToyStory.png" alt="Toy Story coleccionables">
+          <figcaption >
+            <p class="descripcion_producto">Toy Story coleccionables</p>
+            <p class="precio_producto">$79</p>
+            <p class="numero_producto">#21</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(22)">
+          <img class="imagen_producto" src="./img/Sega_Genesi_CDXs.jpg" alt="Sega CDX">
+          <figcaption >
+            <p class="descripcion_producto">Sega CDX</p>
+            <p class="precio_producto">$549</p>
+            <p class="numero_producto">#22</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(23)">
+          <img class="imagen_producto" src="./img/teclado.jpg" alt="Teclado bluetooth">
+          <figcaption >
+            <p class="descripcion_producto">Teclado bluetooth</p>
+            <p class="precio_producto">$35</p>
+            <p class="numero_producto">#23</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(24)">
+          <img class="imagen_producto" src="./img/atari.jpg" alt="Atari 2600">
+          <figcaption >
+            <p class="descripcion_producto">Atari 2600</p>
+            <p class="precio_producto">$429</p>
+            <p class="numero_producto">#24</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(25)">
+          <img class="imagen_producto" src="./img/mario.jpg" alt="Coleccionable MArio">
+          <figcaption >
+            <p class="descripcion_producto">Coleccionable MArio</p>
+            <p class="precio_producto">$45</p>
+            <p class="numero_producto">#25</p>
+          </figcaption>
+        </figure>
+        <figure class="producto" onclick="description(26)">
+          <img class="imagen_producto" src="./img/dron.jpg" alt="Dron Loyalse E58">
+          <figcaption >
+            <p class="descripcion_producto">Dron Loyalse E58</p>
+            <p class="precio_producto">$65</p>
+            <p class="numero_producto">#26</p>
+          </figcaption>
+        </figure>
+      </div>
+      <section class="informacion contenedor">
+        <div class="div_informacion">
+          <a href="./index.html"
+            ><img
+              class="logo_geek logo_inferior"
+              src="./img/logo.png"
+              alt="Logo del e-commerce"
+          /></a>
+          <p><a href="#">¿Quienes somos?</a></p>
+          <p><a href="#">Política de privacidad</a></p>
+          <p><a href="#">Programa de fidelidad</a></p>
+          <p><a href="#">Nuestras sucursales</a></p>
+          <p><a href="#">¿Cómo abrir una franquicia?</a></p>
+          <p><a href="#">Anuncie en nuestra web</a></p>
+        </div>
+        <div>
+          <form action="" class="formulario contacto">
+            <h2>Contactenos aquí</h2>
+            <label for="contacto_nombre" class="label">
+              Nombre:
+              <input
+                id="contacto_nombre"
+                type="text"
+                class="input"
+                placeholder="Ingrese su nombre"
+                required
+              />
+            </label>
+            <label for="contacto_mensaje" class="label">
+              Mensaje:
+              <textarea
+                id="contacto_mensaje"
+                class="input"
+                placeholder="Escribe tu mensaje"
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="button">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+      
+      <footer>
+        <p class="text_footer">Desarrollado por Heber Duarte.</p>
+        <div class="footer">
+          <p class="text_footer">&copy 2022</p>
+          <p class="text_footer">
+            <a href="https://github.com/Heber-739" target="_blank">Github</a>
+          </p>
+          <p class="text_footer">
+            <a href="https://www.linkedin.com/in/heber-duarte-49a84b155/"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./javascript/inicio_sesion.js"></script>
+    <script src="./javascript/descripciones.js"></script>
+
+  </body>
+</html>

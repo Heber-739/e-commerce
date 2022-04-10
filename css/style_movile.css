@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap");
 * {
   box-sizing: border-box;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 section {
-  background: radial-gradient(#638ee5, #253659 );
+  background: radial-gradient(#638ee5, #253659);
   background-repeat: no-repeat;
 }
 .button {
@@ -12,10 +12,9 @@ section {
   padding: 0.15vh 5vw;
   margin: 1vw 0px;
   border-radius: 6px;
-  font-size: 1em;
-  box-shadow: 1px 1px 1px 0px black ;
+  box-shadow: 1px 1px 1px 0px black;
   text-decoration: none;
-  font-family: 'Nerko One', cursive;
+  font-family: "Nerko One", cursive;
   font-size: 1.3em;
 }
 .button:hover {
@@ -29,7 +28,6 @@ section {
   border-radius: 5px;
   padding: 10px;
   margin: 1vh 5%;
-
 }
 .input::placeholder {
   text-align: center;
@@ -85,13 +83,80 @@ section {
   box-shadow: 1px 1px 3px black;
   border-radius: 5px;
 }
-/* ------Conteiner Productos---------- */
-.header a{
+/* ---------- Slider ---------- */
+
+.slider {
+  position: relative;
+  width: 70vw;
+  height: auto;
+  overflow: hidden;
+  margin: 15px auto;
+  border: 2px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+.slider ul {
+  display: flex;
+  animation: cambio 15s infinite alternate;
+  width: 300%;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  29% {
+    margin-left: 0;
+  }
+
+  44% {
+    margin-left: -100%;
+  }
+  68% {
+    margin-left: -100%;
+  }
+
+  89% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+.promocion {
+  position: absolute;
+  background: #2536594d;
+  width: 80%;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.promocion h2 {
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+.promocion p {
+  padding: 3px 0px;
+}
+
+/* ------ Conteiner Productos ---------- */
+.header a {
   margin: 5px 20px;
 }
 .header h1 {
   text-align: center;
-  font-family: 'Nerko One', cursive;
+  font-family: "Nerko One", cursive;
   font-size: calc(1em + 4.5vw);
   margin: 10px 0px;
   text-shadow: 1px 1px #f27457;
@@ -101,12 +166,16 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+.home_prod:nth-child(n + 4) {
+  display: none;
+}
 .producto {
   width: 40vw;
   margin: 10px auto;
+  cursor: pointer;
 }
 .producto:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   transition: all 500ms;
 }
 .producto img {
@@ -125,9 +194,33 @@ section {
 .contenedor {
   padding: 2vh 0 5vh;
 }
-
+/* Home */
+.indicadores {
+  display: inline-flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.indicadores h2 {
+  margin: 10px 10px 2px;
+  font-size: 2em;
+  font-family: "Nerko One", cursive;
+  text-shadow: 1px 1px #f27457;
+}
+.indicadores a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px #f27457;
+}
+.ver_producto {
+  text-align: center;
+  text-decoration: underline;
+  color: #f27457;
+}
+/* -------------------- */
 .formulario {
-  background: linear-gradient(180deg,#027368, #04BF9D );
+  background: linear-gradient(180deg, #027368, #04bf9d);
   color: white;
   height: auto;
   width: 60vw;
@@ -144,10 +237,9 @@ section {
   margin: 15px auto 0px;
 }
 
-
 .formulario h2 {
   font-size: calc(1em + 3.5vw);
-  font-family: 'Nerko One', cursive;
+  font-family: "Nerko One", cursive;
   text-align: center;
   text-shadow: 3px 3px 5px black;
 }
@@ -156,9 +248,8 @@ section {
 }
 /* ----------    Informacion y contacto   ---------- */
 
-
 .informacion {
-  background: linear-gradient(180deg,#04BF9D, #027368 );
+  background: linear-gradient(180deg, #04bf9d, #027368);
   text-align: center;
 }
 .div_informacion {
@@ -186,7 +277,6 @@ form.contacto {
   padding: 10px 20px 1vh;
   background: #25365973;
 }
-
 
 /* --------------    Footer   -------------- */
 footer {

@@ -1,21 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Nerko+One&display=swap");
 * {
   box-sizing: border-box;
   font-size: 1.3em;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
-section {
-  background: radial-gradient(#638ee5, #253659 );
-  background-repeat: no-repeat;
-}
+
 .button {
   background: #f27457;
   padding: 0.7vh 3vw;
   margin: 1vw 0;
   border-radius: 6px;
-  box-shadow: 1px 1px 1px 0px black ;
+  box-shadow: 1px 1px 1px 0px black;
   text-decoration: none;
-  font-family: 'Nerko One', cursive;
+  font-family: "Nerko One", cursive;
   font-size: 1.3em;
 }
 .button:hover {
@@ -53,10 +50,6 @@ section {
   margin: 10px 5px;
 }
 
-.searcher {
-  margin: 0px 10px 0px 0px;
-}
-
 .input_buscador {
   width: 40vw;
   background: #b1b1b1;
@@ -68,19 +61,87 @@ section {
 .icon_search {
   display: none;
 }
-.input_buscador:hover{
+.input_buscador:hover {
   background: #253659a8;
   color: white;
   transition: background 1s;
   border-radius: 20px;
 }
+
+/* ---------- Slider ---------- */
+
+.slider {
+  position: relative;
+  width: 60vw;
+  height: auto;
+  overflow: hidden;
+  margin: 15px auto;
+  border: 2px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+.slider ul {
+  display: flex;
+  animation: cambio 15s infinite alternate;
+  width: 300%;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  29% {
+    margin-left: 0;
+  }
+
+  44% {
+    margin-left: -100%;
+  }
+  68% {
+    margin-left: -100%;
+  }
+
+  89% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+.promocion {
+  position: absolute;
+  background: #2536594d;
+  width: 80%;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.promocion h2 {
+  font-size: 1.8em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+.promocion p {
+  padding: 10px 0px;
+}
+
 /* ------Conteiner Productos---------- */
-.header a{
+.header a {
   margin: 5px 20px;
 }
 .header h1 {
   text-align: center;
-  font-family: 'Nerko One', cursive;
+  font-family: "Nerko One", cursive;
   font-size: calc(1em + 4.5vw);
   margin: 10px 0px;
   text-shadow: 1px 1px #f27457;
@@ -93,6 +154,10 @@ section {
 .producto {
   width: 22vw;
   margin: 10px auto;
+  cursor: pointer;
+}
+.home_prod:nth-child(n + 6) {
+  display: none;
 }
 .producto img {
   width: 100%;
@@ -109,15 +174,44 @@ section {
 .precio_producto {
   font-weight: bold;
 }
-
+.precio_producto::before {
+  content: "Precio: ";
+  font-weight: lighter;
+}
 
 /* ------Form inicio sesion---------- */
 .contenedor {
   padding: 2vh 0 5vh;
 }
 
+/* Home */
+.indicadores {
+  display: inline-flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.indicadores h2 {
+  margin: 10px 10px 2px;
+  font-size: 2em;
+  font-family: "Nerko One", cursive;
+  text-shadow: 1px 1px #f27457;
+}
+.indicadores a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px #f27457;
+}
+.ver_producto {
+  text-align: center;
+  text-decoration: underline;
+  color: #f27457;
+}
+/* -------------------- */
+
 .formulario {
-  background: linear-gradient(180deg,#027368, #04BF9D );
+  background: linear-gradient(180deg, #027368, #04bf9d);
   color: white;
   height: auto;
   width: 60vw;
@@ -136,7 +230,7 @@ section {
 
 .formulario h2 {
   font-size: calc(1.5em + 3.5vw);
-  font-family: 'Nerko One', cursive;
+  font-family: "Nerko One", cursive;
   text-align: center;
   text-shadow: 3px 3px 5px black;
 }
@@ -149,7 +243,7 @@ section {
 .informacion {
   width: 100vw;
   height: auto;
-  background: linear-gradient(180deg,#04BF9D, #027368 );
+  background: linear-gradient(180deg, #04bf9d, #027368);
   text-align: center;
 }
 .div_informacion {
